@@ -1,4 +1,9 @@
 # AZ-900: Microsoft Azure Fundamentals
+---
+
+### Complete Study Documentation
+
+---
 
 ## Table of Contents
 
@@ -2623,6 +2628,7 @@ Beyond standard public regions, Azure has **sovereign regions** — isolated ins
 | **Risk and Compliance** | Protects sensitive data across Microsoft 365 services; supports GDPR, HIPAA compliance |
 | **Unified Data Governance** | Maps, discovers, classifies, and governs data across Azure, on-prem, and other clouds (including AWS S3) |
 
+
 | Tool | Focus |
 |---|---|
 | **Azure Policy** | Govern Azure resource configuration |
@@ -3036,16 +3042,3 @@ The **production-ready, fully supported release**:
 > 📝 **Exam Tip:** Public Preview = **no SLA, no guaranteed support, not for production**. GA = **full SLA, full support, production-ready**. Individual features of a GA service can still be in Preview — always check at the feature level.
 
 ---
-
-## Exam Domain Coverage
-
-| Domain | Sections |
-|---|---|
-| **Cloud Concepts** | 1–7 (Cloud computing, CapEx/OpEx, service models, deployment models) |
-| **Core Azure Services** | 8–19 (Regions, compute, networking, storage, databases, IoT, AI, DevOps, tools) |
-| **Security, Privacy & Compliance** | 20–28 (NSG, firewall, DDoS, identity, Defender, Key Vault) |
-| **Azure Governance** | 29–34 (RBAC, Tags, Policy, Blueprints, CAF, compliance documents) |
-| **Pricing & Support** | 35–39 (Cost factors, reduction methods, Cost Management, SLA, service lifecycle) |
-
----
-
