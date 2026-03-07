@@ -44,6 +44,7 @@
 | 38 | [SLA & Composite SLA](#section-38--sla--composite-sla) |
 | 39 | [Service Lifecycle: Preview & GA](#section-39--service-lifecycle-preview--ga) |
 | 40 | [Azure Support Plans](#section-40--azure-support-plans) |
+| 41 | [Microsoft Entra ID Plans](#section-41--microsoft-entra-id-plans) |
 
 ---
 
@@ -3148,5 +3149,55 @@ Regardless of tier, every Azure customer receives:
 | **Support API** | Professional Direct and above only |
 
 > 📝 **Exam Tip:** Know the five plan names and their key differentiators: **Basic = free/no technical support**, **Developer = business hours only**, **Standard = 24/7 production support**, **Professional Direct = advisory + webinars + ops**, **Premier/Unified = designated TSM + 15-min Sev A**. Azure Advisor is **free on all plans** — not a paid feature.
+
+---
+
+> ## Section 41 — Microsoft Entra ID Plans
+
+**Microsoft Entra ID** (formerly Azure Active Directory) is Azure's cloud-based **Identity and Access Management (IAM)** service. It comes in three main tiers relevant to AZ-900: **Free**, **Premium P1**, and **Premium P2**.
+
+---
+
+### Plan Comparison
+
+| Feature | Free | Premium P1 | Premium P2 |
+|---|---|---|---|
+| **Price** | Included | ~$6/user/month | ~$9/user/month |
+| **User & Group Management** | ✅ | ✅ | ✅ |
+| **SSO** | ✅ (Microsoft apps) | ✅ (unlimited apps) | ✅ |
+| **Basic MFA (Security Defaults)** | ✅ | ✅ | ✅ |
+| **Self-Service Password Reset (cloud)** | ✅ | ✅ | ✅ |
+| **Self-Service Password Reset (on-premises)** | ❌ | ✅ | ✅ |
+| **Conditional Access** | ❌ | ✅ | ✅ |
+| **Dynamic Groups** | ❌ | ✅ | ✅ |
+| **Identity Protection (AI risk detection)** | ❌ | ❌ | ✅ |
+| **Privileged Identity Management (PIM)** | ❌ | ❌ | ✅ |
+| **Access Reviews** | ❌ | ❌ | ✅ |
+| **SLA** | None | 99.99% | 99.99% |
+
+---
+
+### What Each Plan Adds
+
+**Free** — Bundled with any Azure or Microsoft 365 subscription. Covers basic user/group management, SSO for Microsoft apps, and MFA via Security Defaults (all-or-nothing; no granular control). No Conditional Access.
+
+**Premium P1** — Adds **Conditional Access** (grant/block access based on location, device, app, or user), dynamic group membership, hybrid SSPR, and unlimited app SSO. Included in M365 E3.
+
+**Premium P2** — All P1 features, plus **Identity Protection** (AI-driven risk detection for compromised accounts), **Privileged Identity Management** (just-in-time admin access), and **Access Reviews** (periodic role recertification). Included in M365 E5.
+
+---
+
+### Summary
+
+| Concept | Key Point |
+|---|---|
+| **Free** | Basic identity + MFA defaults; no Conditional Access; **no SLA** |
+| **P1** | Adds Conditional Access, dynamic groups, hybrid SSPR; **99.99% SLA** |
+| **P2** | Adds Identity Protection, PIM, Access Reviews; **99.99% SLA** |
+| **Conditional Access** | P1+ — policy-based access control (location, device, risk) |
+| **PIM** | P2+ — just-in-time admin role activation |
+| **Identity Protection** | P2+ — AI detection of risky sign-ins and compromised users |
+
+> 📝 **Exam Tip:** The key progression is **Free → P1 adds Conditional Access → P2 adds Identity Protection + PIM**. Conditional Access and PIM are the two most exam-tested features — know which tier each belongs to.
 
 ---
