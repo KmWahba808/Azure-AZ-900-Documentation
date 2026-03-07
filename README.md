@@ -43,6 +43,7 @@
 | 37 | [Azure Cost Management](#section-37--azure-cost-management) |
 | 38 | [SLA & Composite SLA](#section-38--sla--composite-sla) |
 | 39 | [Service Lifecycle: Preview & GA](#section-39--service-lifecycle-preview--ga) |
+| 40 | [Azure Support Plans](#section-40--azure-support-plans) |
 
 ---
 
@@ -3035,5 +3036,117 @@ The **production-ready, fully supported release**:
 | **Azure Preview Portal** | `preview.portal.azure.com` — upcoming portal features before GA |
 
 > 📝 **Exam Tip:** Public Preview = **no SLA, no guaranteed support, not for production**. GA = **full SLA, full support, production-ready**. Individual features of a GA service can still be in Preview — always check at the feature level.
+
+---
+
+> ## Section 40 — Azure Support Plans
+
+Microsoft offers five support plans, ranging from free to enterprise-grade. Choosing the right plan affects response times, access to technical engineers, and architectural guidance.
+
+---
+
+### The Five Support Plans
+
+| Plan | Price (per month) | Best For |
+|---|---|---|
+| **Basic** | Free (included) | All Azure subscribers — billing & self-help only |
+| **Developer** | ~$29 | Trial / non-production environments |
+| **Standard** | ~$100 | Production workloads |
+| **Professional Direct** | ~$1,000 | Business-critical workloads |
+| **Premier / Unified** | Custom (contact Microsoft) | Enterprise-wide, mission-critical dependence on Azure |
+
+---
+
+### Full Feature Comparison
+
+| Feature | Basic | Developer | Standard | Professional Direct | Premier / Unified |
+|---|---|---|---|---|---|
+| **Monthly Price** | Free | ~$29 | ~$100 | ~$1,000 | Custom |
+| **Billing & Subscription Support** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Azure Advisor Access** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Azure Health Status & Root Cause Analysis** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Azure Documentation & Community Forums** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Technical Support (Break-Fix)** | ❌ | ✅ Business hours only | ✅ 24/7 | ✅ 24/7 | ✅ 24/7 |
+| **Number of Support Contacts** | ❌ | 1 | Unlimited | Unlimited | Unlimited |
+| **Support Ticket Submission** | ❌ | ✅ | ✅ | ✅ | ✅ |
+| **Third-Party Software Support** | ❌ | ❌ | ✅ | ✅ | ✅ |
+| **Support API Access** | ❌ | ❌ | ❌ | ✅ | ✅ |
+| **Operations Support** | ❌ | ❌ | ❌ | ✅ Onboarding review | ✅ Full |
+| **Azure Engineering-Led Webinars / Training** | ❌ | ❌ | ❌ | ✅ | ✅ |
+| **Proactive Guidance (Technical Account Manager)** | ❌ | ❌ | ❌ | ❌ | ✅ Designated TSM |
+| **Architecture Support** | ❌ | General guidance | General guidance | Advisory services | Designated TSM |
+
+---
+
+### Severity Levels & Response Times
+
+Support cases are assigned a severity level (A = highest, C = lowest). Response times vary by plan:
+
+| Severity | Impact | Developer | Standard | Professional Direct | Premier / Unified |
+|---|---|---|---|---|---|
+| **Severity A — Critical** | Production system down; severe business impact | ❌ | < 1 hour | < 1 hour | < 15 minutes |
+| **Severity B — High** | Moderate impact; workaround available | ❌ | < 4 hours | < 2 hours | < 2 hours |
+| **Severity C — Minimal** | Minimal impact; general questions | < 8 business hours | < 8 business hours | < 4 business hours | < 4 business hours |
+
+> **Note:** Developer plan does not offer Severity A or B case submission. Technical support is only available during business hours.
+
+---
+
+### What Every Plan Includes (Basic & Above)
+
+Regardless of tier, every Azure customer receives:
+- **Billing and subscription management support** — billing questions, quota increases, account transfers
+- **Azure Advisor** — free personalized best-practice recommendations (Cost, Security, Reliability, Performance, Operational Excellence)
+- **Azure Service Health** — real-time service status, planned maintenance alerts, and Root Cause Analysis (RCA) documents after incidents
+- **Azure documentation, how-to videos, and community forums**
+
+---
+
+### Key Differentiators by Plan
+
+#### Developer
+- 1 support contact
+- Business hours only (no 24/7)
+- Only Severity C cases
+- Suitable for non-production / testing environments
+
+#### Standard
+- Unlimited support contacts
+- 24/7 access for Severity A and B cases
+- Third-party software support (interoperability guidance)
+- Minimum recommended plan for production workloads
+
+#### Professional Direct
+- Adds **Support API** for programmatic case management
+- **Onboarding reviews** and **operations support**
+- **Architecture advisory** services
+- Microsoft **engineering-led webinars**
+- Faster Severity B response (2 hrs vs 4 hrs)
+
+#### Premier / Unified
+- **Designated Technical Support Manager (TSM)** — a named Microsoft resource who knows your environment
+- **Fastest Severity A response** — 15 minutes
+- Full **proactive services**: health reviews, architecture reviews, workshops, training
+- Suitable for organizations with enterprise-wide, mission-critical Azure dependency
+- Pricing is negotiated directly with Microsoft
+
+---
+
+### Summary
+
+| Concept | Key Point |
+|---|---|
+| **Basic** | Free; billing support + self-help only; no technical break-fix support |
+| **Developer** | Cheapest paid plan; 1 contact; business hours; Severity C only |
+| **Standard** | 24/7 break-fix; unlimited contacts; Severity A/B/C; third-party support |
+| **Professional Direct** | Adds advisory, webinars, ops support, Support API; 2-hr Severity B SLA |
+| **Premier / Unified** | Enterprise-grade; designated TSM; 15-min Severity A; proactive services |
+| **Severity A** | Production down — fastest response (Standard: 1hr; ProDirect: 1hr; Premier: 15min) |
+| **Severity C** | Minimal impact — available on all paid plans including Developer |
+| **Azure Advisor** | Free for all plans — no paid plan required |
+| **Third-party support** | Standard and above only |
+| **Support API** | Professional Direct and above only |
+
+> 📝 **Exam Tip:** Know the five plan names and their key differentiators: **Basic = free/no technical support**, **Developer = business hours only**, **Standard = 24/7 production support**, **Professional Direct = advisory + webinars + ops**, **Premier/Unified = designated TSM + 15-min Sev A**. Azure Advisor is **free on all plans** — not a paid feature.
 
 ---
